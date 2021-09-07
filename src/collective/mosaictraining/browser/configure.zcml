@@ -18,4 +18,10 @@
       directory="static"
       />
 
+  <!-- resource directories -->
+  <browser:resourceDirectory
+      name="collective.mosaictraining.images"
+      directory="images"
+    />
+
 </configure>

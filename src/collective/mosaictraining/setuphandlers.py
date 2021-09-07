@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 from Products.CMFPlone.interfaces import INonInstallable
 from zope.interface import implementer
-
+#from sixfeetup.utils import helpers as sfutils
+from collective.mosaictraining.importcontent import import_content
 
 @implementer(INonInstallable)
 class HiddenProfiles(object):
@@ -15,7 +16,9 @@ class HiddenProfiles(object):
 
 def post_install(context):
     """Post install script"""
-    # Do something at the end of the installation of this package.
+    # Create the Mosaic training guide pages and images
+    import_content(context)
+
 
 
 def uninstall(context):

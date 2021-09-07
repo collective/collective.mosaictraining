@@ -21,7 +21,7 @@
       name="default"
       title="collective.mosaictraining"
       directory="profiles/default"
-      description="Installs the collective.mosaictraining add-on."
+      description="Installs a Mosaic User Training Guide."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       post_handler=".setuphandlers.post_install"
       />
@@ -30,7 +30,7 @@
       name="uninstall"
       title="collective.mosaictraining (uninstall)"
       directory="profiles/uninstall"
-      description="Uninstalls the collective.mosaictraining add-on."
+      description="Uninstalls the Mosaic User Training Guide."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       post_handler=".setuphandlers.uninstall"
       />

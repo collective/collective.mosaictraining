@@ -6,34 +6,10 @@
 collective.mosaictraining
 =========================
 
-Tell me what your product does
-
-Features
---------
-
-- Can be bullet points
-
-
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
-
+- This add-on creates a new unpublished folder called Mosaic User Training Guide.
+- Uninstalling this will not remove the Mosaic User Training Guide folder.
+- Re-installing the add-on will recreate any missing pages of the training guide without overwriting existing ones
+- If the Mosaic User Training Guide folder is renamed or deleted, re-installing the add-on will recreate a new folder.
 
 Installation
 ------------
@@ -56,14 +32,6 @@ Contribute
 
 - Issue Tracker: https://github.com/collective/collective.mosaictraining/issues
 - Source Code: https://github.com/collective/collective.mosaictraining
-- Documentation: https://docs.plone.org/foo/bar
-
-
-Support
--------
-
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
 
 
 License
