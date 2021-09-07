@@ -14,7 +14,7 @@ import logging
 def import_content(context):
     pages_dir = os.path.join(
         os.path.dirname(__file__), 'pages', )
-    list_contents = [f for f in os.listdir(pages_dir)]
+    # list_contents = [f for f in os.listdir(pages_dir)]
 
     """Read file listing content to import"""
     objects = _read_file('.objects', pages_dir)
@@ -60,7 +60,7 @@ def import_content(context):
 
         if id in parent_folder:
             continue
-        new_content = api.content.create(
+        new_content = api.content.create(  # noqa: F841
             type=type,
             title=title,
             id=id,
