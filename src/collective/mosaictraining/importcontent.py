@@ -47,8 +47,8 @@ def import_content(context):
         # block right parent portlets on folder
         manager = getUtility(IPortletManager, name=u"plone.rightcolumn")
         assignable = getMultiAdapter(
-                                (parent_folder, manager),
-                                ILocalPortletAssignmentManager)
+                                    (parent_folder, manager),
+                                    ILocalPortletAssignmentManager)
         for category in CONTEXT_CATEGORY, GROUP_CATEGORY:
             assignable.setBlacklistStatus(category, True)
 
@@ -86,8 +86,8 @@ def _read_file(filename, path):
 
 def _load_html(file_id, file_dir):
     html_file = os.path.join(
-                    file_dir,
-                    '{0}.html'.format(file_id),)
+                        file_dir,
+                        '{0}.html'.format(file_id),)
     with open(html_file, 'r') as html_opened:
         file_text = html_opened.read()
     return RichTextValue(
